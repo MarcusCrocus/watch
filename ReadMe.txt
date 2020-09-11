@@ -43,7 +43,7 @@ GitHub back up repository
 2) lick your project with repository
 		git remote add origin https://github.com/MarcusCrocus/watch.git
 		git push -u origin master
-		git branch -M master
+		
 		
 	
 
