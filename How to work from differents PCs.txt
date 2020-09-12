@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 we have local project working form home to get acces from work 
 first of all we need do download repository on your work place folder
 
@@ -13,3 +14,18 @@ when from home to start from the end of working project (update fore home work)
 	*git pull (DONT FORGETING TO START FROM THIS) 
 
 	* if u did any changes in global repository u should always to use *GIT PULL before commit
+=======
+we have local project working form home to get acces from work 
+first of all we need do download repository on your work place folder
+
+1) download rar from gitHub
+2) compy link repository from gitHub
+3) vs code
+	cd..
+	cd work (working folder)
+	git clone https://github.com/MarcusCrocus/watch.git folder_project
+
+when from home to start from the end of working project (update fore home work)
+	
+	*git pull (DONT FORGETING TO START FROM THIS) 
+>>>>>>> cfb6987f1634112419b39a77fcb02494befd28ae
