@@ -1,29 +1,19 @@
 {
-  "name": "watch",
+  "name": "any-project",
   "version": "1.0.0",
-  "description": "first layout for watch",
+  "description": "druft-file-for-all-of-my-projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MarcusCrocus/watch.git"
-  },
-  "author": "Artem Zelenskyy",
+  "author": "Artemus Marcus",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MarcusCrocus/watch/issues"
-  },
-  "homepage": "https://github.com/MarcusCrocus/watch#readme",
   "devDependencies": {
     "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
     "gulp-cli": "^2.3.0",
-    "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0"
-  },
-  "dependencies": {}
+  }
 }
