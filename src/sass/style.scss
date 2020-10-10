@@ -1,11 +1,9 @@
 @import 'base/variables';
 * {
 	font-family: 'Museo Sans Cyrl', sans-serif;
-/* 	box-sizing: border-box;
-	margin: 0 auto;
-	padding: 0; */
 }
 .container {
 	max-width: 940px;
 	margin: 0 auto;
 }
+@import 'blocks/promo';
