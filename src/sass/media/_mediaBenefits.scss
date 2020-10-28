@@ -1,0 +1,11 @@
+@media (max-width: 768px){
+    .benefits{
+        &__icons{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__icon{
+            padding: 20px;
+        }
+    }
+}
