@@ -6,15 +6,23 @@
 	max-width: 940px;
 	margin: 0 auto;
 }
-@import 'blocks/promo';
-@import 'blocks/header';
-@import 'blocks/buttons';
-@import 'blocks/benefits';
-@import 'blocks/consultation';
-@import 'blocks/titles';
-@import 'blocks/forms';
+@import 'blocks/titles/titles';
+@import 'blocks/Titles/mediaTitles';
 
-@import 'media/mediaHeader';
-@import 'media/mediaButton';
-@import 'media/mediaPromo';
-@import 'media/mediaBenefits';
+@import 'blocks/Buttons/buttons';
+@import 'blocks/Buttons/mediaButton';
+
+@import 'blocks/header/header';
+@import 'blocks/header/mediaHeader';
+
+@import 'blocks/Promo/promo';
+@import 'blocks/Promo/mediaPromo';
+
+@import 'blocks/Benefits/benefits';
+@import 'blocks/Benefits/mediaBenefits';
+
+
+@import 'blocks/Consultation/consultation';
+@import 'blocks/Consultation/forms';
+@import 'blocks/Consultation/mediaForms'
+
