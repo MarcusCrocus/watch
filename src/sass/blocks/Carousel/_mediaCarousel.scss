@@ -1,0 +1,13 @@
+@media(max-width: 1200px){
+    .carousel__inner{
+        img{
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+@media(max-width: 992px){
+    .carousel__inner{
+        width: 80%;
+    }
+}

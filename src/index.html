@@ -9,18 +9,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="autor" content="Artem Zelenskyy">
     <title>Watches</title>
+<head>
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet"> -->
+        <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <!--<link rel="stylesheet" href="css/bootstrap-grid.min.css"> -->
+        <link rel="stylesheet" href="css/fonts.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"> <!-- js carousel -->
+        <link rel="stylesheet" href="css/slick.css"> <!-- carousel__inner -->
+        <link rel="stylesheet" href="css/slick-theme.css"> <!-- for carousel -->
+        <link rel="stylesheet" href="css/style.min.css">
+ 
+</head>
 
-<!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-<!--     <link rel="stylesheet" href="css/bootstrap-grid.min.css"> -->
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.min.css">
-    
-</head>
-</head>
 <body>
-    <div class="promo">
+    <section class="promo">
         <div class="container">
             <header class="header">
                 <a href "#" class="header__logo">
@@ -67,10 +70,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
-    <div class="benefits">
+    <section class="benefits">
         <div class="container">
             <div class="benefits__wrapper">
 
@@ -113,9 +116,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="consultation">
+    <section class="consultation">
         <div class="container">
             <h2 class="title title__left">
                 Get a free consultation 
@@ -130,28 +133,49 @@
             </h3>
 
             <form class="feed-forms" action="#">
-                    <!-- tipes of code
-                <label for="first">first input</label>
-                <input id="first" type="text">
+<!-- tipes of code
+    <label for="first">first input</label>
+    <input id="first" type="text">
 
-                <label>second input
-                    <input type="text">
-                </label> -->
+    <label>second input
+    <input type="text">
+    </label> -->
 
                 <input name="name"required placeholder="Your Name" value="John" type="text">
                 <input name="phone"required placeholder="Your Phone" value="" type="number">
                 <input name="email"required placeholder=" Your E-mail" type="email">
 
-                <!-- <input type="submit" value="order a CONSULTATION"> -->
+<!--<input type="submit" value="order a CONSULTATION"> -->
 
                 <button class="button button_submit">order a CONSULTATION</button>
 
             </form>
         </div>
-    </div>
+    </section>
+
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel__inner">
+                <div>
+                    <img src="img/carousel/polar.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/carousel/polar-m600.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/carousel/polar-m400-triple.jpg" alt="">
+                </div>
+              </div>
+        </div>
+    </section>
 
 
 
-</body>
-</html>
 
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script> <!-- for carousel -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> <!-- for carousel -->
+    
+    <script src="js/slick.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> js carousel -->
+    <script src="js/script.js"></script>

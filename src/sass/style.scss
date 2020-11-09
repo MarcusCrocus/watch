@@ -5,6 +5,7 @@
 .container {
 	max-width: 940px;
 	margin: 0 auto;
+	align-items: center;
 }
 @import 'blocks/titles/titles';
 @import 'blocks/Titles/mediaTitles';
@@ -24,5 +25,8 @@
 
 @import 'blocks/Consultation/consultation';
 @import 'blocks/Consultation/forms';
-@import 'blocks/Consultation/mediaForms'
+@import 'blocks/Consultation/mediaForms';
+
+@import 'blocks/Carousel/carousel';
+@import 'blocks/Carousel/mediaCarousel';
 
