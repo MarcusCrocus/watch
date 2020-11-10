@@ -80,7 +80,7 @@ $(document).ready(function(){
         nextArrow: '<button type="button" class="slick-next"><img src="icons/carousel/right_solid_982.svg" ></button>',
         responsive:[
             {
-                breakpoint: 1200,
+                breakpoint: 992,
                 settings: {
                     arrows: false,
                     dots: true,
