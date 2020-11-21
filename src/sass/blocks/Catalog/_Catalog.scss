@@ -38,7 +38,7 @@
     }
     &__content {
         margin-top: 60px;
-        display: none;
+        display: none; //изначально контент скрыт что бы отработали табы
         justify-content: space-between;
         flex-wrap: wrap; //все что не помещается уходит на новую строку
         &_active{

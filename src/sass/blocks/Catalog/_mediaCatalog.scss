@@ -1,0 +1,14 @@
+@media(max-width: 1200px) {
+    .catalog{
+        &__tab {
+            font-size: 14px;
+        }
+        &__tabs {
+            width: 75%;
+            margin: 70px auto;
+        }
+        &__content {
+            justify-content: space-around;
+        }
+    }
+}
