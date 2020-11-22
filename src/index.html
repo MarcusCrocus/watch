@@ -132,7 +132,7 @@
                 and we will call you back within 10 minutes
             </h3>
 
-            <form class="feed-forms" action="#">
+            <form id="consultation-forms" class="feed-forms" action="#">
                             <!-- tipes of code
                                 <label for="first">first input</label>
                                 <input id="first" type="text">
@@ -657,7 +657,7 @@
                 and we will call you back within 10 minutes
             </div>
             <form class="feed-forms feed-forms_mt25" action="#">
-                <input name="name"required placeholder="Your Name" value="" type="text">
+                <input name="name"required minlength="3" placeholder="Your Name" value="" type="text">
                 <input name="phone"required placeholder="Your Phone" value="" type="number">
                 <input name="email"required placeholder=" Your E-mail" type="email">
 
@@ -674,9 +674,9 @@
                 Polar FT1 heart rate monitor
             </div>
             <form class="feed-forms feed-forms_mt25" action="#">
-                <input name="name"required placeholder="Your Name" value="" type="text">
-                <input name="phone"required placeholder="Your Phone" value="" type="number">
-                <input name="email"required placeholder=" Your E-mail" type="email">
+                <input name="name" placeholder="Your Name" value="" type="text"> <!-- required делаем через jquery -->
+                <input name="phone" placeholder="Your Phone" value="" type="number">
+                <input name="email" placeholder=" Your E-mail" type="email">
 
                 <button class="button button_submit">order a CONSULTATION</button> 
             </form> 
@@ -701,6 +701,7 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> <!-- for carousel -->
     
     <script src="js/slick.min.js"></script>
-
+    <script src="js/jquery.validate.min.js" ></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> js carousel -->
     <script src="js/script.js"></script>
+    
