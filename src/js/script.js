@@ -126,13 +126,14 @@ $(document).ready(function(){
     toggleSlide('.catalog-item__back');
 
 
-/*                                             //Js carousel
-let slider = tns({
+                                         //Js carousel
+
+    /* let slider = tns({
     container: '.carousel__inner',
     items: 1,
     slideBy: 'page',
     autoplay: true
-}); */
+    });  */
 
                             // Modal
 
@@ -142,7 +143,7 @@ let slider = tns({
     $('.modal__close').on('click', function(){
         $('.overlay, #consultation, #order, #thx').fadeOut('slow')
     });
-/*     $('.button_mini').on('click', function(){
+    /*  $('.button_mini').on('click', function(){
         $('.overlay, #order').fadeIn('slow');
     }); */
 
@@ -212,4 +213,25 @@ let slider = tns({
     validationForm('#consultation-forms');
     validationForm('#consultation form');
     validationForm('#order form');
+
+    //masks (нужно убрать у импутов type="number")
+
+    $('input[name=phone]').mask("+34 999-999-999");
+
+    //работа с серверной частью
+
+    $('form').submit(function(e){ //отменяем стандартное поведение браузера (технология Ajax без перезагрузки браузера) отправка форм на сайт
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
 });
