@@ -16,10 +16,10 @@ $mail->SMTPAuth = true;                               // Enable SMTP authenticat
 $mail->Username = 'transitmanage@gmail.com';                 // Наш логин
 $mail->Password = 'A1l9e8x7';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465;                                    // TCP port to connect to
+$mail->Port = 465;                                   // TCP port to connect to
  
 $mail->setFrom('transitmanage@gmail.com', 'Pulse');   // От кого письмо 
-$mail->addAddress('retof76573@ffeast.com');     // Add a recipient
+$mail->addAddress('kixiy72139@58as.com');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');

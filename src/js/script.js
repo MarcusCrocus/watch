@@ -219,8 +219,8 @@ $(document).ready(function(){
     $('input[name=phone]').mask("+34 999-999-999");
 
     //работа с серверной частью
-
-    $('form').submit(function(e){ //отменяем стандартное поведение браузера (технология Ajax без перезагрузки браузера) отправка форм на сайт
+                                                                //отменяем стандартное поведение браузера (технология Ajax без перезагрузки браузера) отправка форм на сайт
+    $('form').submit(function(e){ 
         e.preventDefault();
         $.ajax({
             type: "POST",
@@ -228,6 +228,8 @@ $(document).ready(function(){
             data: $(this).serialize()
         }).done(function() {
             $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thx').fadeIn('slow');
 
 
             $('form').trigger('reset');
