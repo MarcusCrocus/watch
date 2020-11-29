@@ -140,7 +140,24 @@
                 font-size: 14px;
                 font-weight: 300;
                 color: #555555;
-                margin-bottom: 20px;
+                margin-bottom: 12px;
+                &:last-child {
+                    position: absolute;
+                    bottom: 0;
+                    text-align: center;
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $main-color;
+                    text-decoration: underline;
+                    text-transform: uppercase;
+                    &:hover {
+                        color: $main-color;
+                    }
+                    &:before{
+                        display: none;
+                    }
+                }
                 &:before {        // точки в li
                     content:''; // что бы работал нужно создавать хотя б пустую строку
                     position: absolute;

@@ -1,6 +1,7 @@
 .benefits{
     min-height: 470px;
     padding: 70px 0 78px;
+    background-color: #f6f6f6;;
     &__wrapper{
         display: flex;
         flex-direction: column;
@@ -26,6 +27,19 @@
             font-size: 18px;
             font-weight: 700;
             text-align: center;
+        }
+        &_animated {
+            
+            animation: heartbeat 1.5s ease infinite;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode;
+            
+            animation-name: heartbeat; 
+            animation-duration: 1.5s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite; */
+            &:hover {
+                animation-play-state: paused; // останавливается при наведении
+            }
         }
         &__text{
             margin-top: 26px;

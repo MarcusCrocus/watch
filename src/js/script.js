@@ -236,4 +236,23 @@ $(document).ready(function(){
         });
         return false;
     });
+
+    //smooth scroll and pageUp
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600){
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+        //smooth scrol
+
+    $("a[href=#]").click(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
+
+    new WOW().init(); // подключение анимации https://github.com/graingert/wow https://wowjs.uk/docs.html
 });
