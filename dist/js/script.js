@@ -222,6 +222,11 @@ $(document).ready(function(){
                                                                 //отменяем стандартное поведение браузера (технология Ajax без перезагрузки браузера) отправка форм на сайт
     $('form').submit(function(e){ 
         e.preventDefault();
+
+        if (!$(this).valid()) {
+        return;
+        }
+
         $.ajax({
             type: "POST",
             url: "mailer/smart.php",
