@@ -1,3 +1,17 @@
+start new project from home
+
+ git init
+ git config --local user.name "Marcus"
+ git config --local user.email artemusmarcus@gmail.com
+ git add -A
+ git add -a -m"beggining of portfolio"
+ git remote add origin https://github.com/MarcusCrocus/Portfolio.git
+ git push -origin main
+
+ npm i (node modules folder)
+ npm update --save (json обновление пакетов)
+
+
 <<<<<<< HEAD
 we have local project working form home to get acces from work 
 first of all we need do download repository on your work place folder
